@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Agu+Display&family=Alegreya:ital,wght@0,400..900;1,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Agu+Display&family=Alegreya:ital,wght@0,400..900;1,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster&family=Lora:ital,wght@0,400..700;1,400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+.aboreto-regular {
+  font-family: "Aboreto", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Poppins", serif;
+  margin: 0;
+  font-size: 16px;
+  background-color: #4f8b69;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+:root {
+  --border-colour: #fff5;
+  --w-image: 500px;
+  --calculate: calc(3 / 2);
+}
+header {
+  display: grid;
+  grid-template-columns: 80px 1fr calc(var(--w-image) * var(--calculate));
+  grid-template-rows: 80px;
+  position: relative;
+  z-index: 10;
+  border-bottom: 1px solid var(--border-colour);
+}
+header .logo img {
+  width: 80%;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header nav a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0 1rem;
+}
+header nav ul {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
